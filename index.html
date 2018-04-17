@@ -8,15 +8,12 @@
     <link rel="stylesheet" href="resources/css/semantic.css">
     <script src="resources/js/jquery-3.3.1.min.js"></script>
     <script src="resources/js/semantic.js"></script>
+    <link rel="stylesheet" href="resources/css/custom.css">
 </head>
 <body>
-    <script>
-        $("#pusherb").click(function(){
-            $(".ui.sidebar").sidebar('toggle');
-        });    
-    </script>
+    
     <header>
-        <div class="ui sidebar">
+        <div class="ui sidebar inverted vertical menu">
             <a class="item">
                 Inicio
             </a>
@@ -31,16 +28,25 @@
             </a>
         </div>
         <div class="pusher">
-            <div class="ui grid">
+            <div class="ui six column grid">
                 <div class="two wide column" id="pusherb">
-                    <i class="bars icon"></i>
-                    Menu
+                    <h2 class="ui header">
+                            <i class="bars icon"></i>
+                            Menu
+                    </h2>
                 </div>
-                <div class="ten wide column">
-                    IntelliGreen
+                <div class="four wide column">
+                    <h1 class="ui header">
+                            IntelliGreen
+                    </h1>
                 </div>
             </div>
         </div>
     </header>
 </body>
+<script>
+        $("#pusherb").click(function(){
+            $(".ui.sidebar").sidebar('toggle');
+        });    
+</script>
 </html>
